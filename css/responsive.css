@@ -1,0 +1,165 @@
+@media (width = 425px){
+    ul{
+        width: 60%;
+        margin-top: 425px;
+    }
+    .ri-close-large-line{
+        margin-left: 100px;
+    }
+    li{
+        font-size: 20px;
+        margin-left: 10px;
+    }
+    .main-heading{
+        font-size: 30px;
+    }
+    .main-p1{
+        font-size: 18px;
+        width: 450px;
+    }
+    .main-p2{
+        font-size: 15px;
+        width: 380px;
+    }
+    .mainfree{
+        font-size: 15px;
+    }
+    .contactbtn{
+        padding: 15px 20px;
+        font-size: 15px;
+        margin-top: 20px;
+    }
+    .maincontainer{
+        flex-wrap: wrap;
+        margin-top: 100px;
+    }
+    .maincp1{
+        width: 80px;
+    }
+    .main-pic{
+        width: 200px;
+        height: 200px;
+        margin-left: -80px;
+        margin-top: 100px;
+    }
+    .gol1{
+        margin-left: 100px;
+        margin-top: 280px;
+    }
+    .gol2{
+        margin-left: 100px;
+    }
+    .gol3{
+        margin-left: 100px;
+    }
+    .gol4{
+        margin-left: 100px;
+    }
+    .gol5{
+        margin-left: 100px;
+    }
+    .gol1-h4{
+        margin-left: 200px;
+        font-size: 18px;
+    }
+    .gol2-h4{
+        margin-left: 200px;
+        font-size: 18px;
+    }
+    .gol3-h4{
+        margin-left: 200px;
+        font-size: 18px;
+    }
+    .gol4-h4{
+        margin-left: 200px;
+        font-size: 18px;
+    }
+    .gol5-h4{
+        margin-left: 200px;
+        font-size: 18px;
+    }
+    .about-heading{
+        margin-left: 750px;
+        font-size: 30px;
+        width: 330px;
+        margin-top: 400px;
+    }
+    .about-p{
+        margin-left: 750px;
+        font-size: 15px;
+        width: 300px;
+    }
+    .aboutbtn{
+        margin-left: 750px;
+        font-size: 15px;
+        padding: 15px 20px;
+    }
+    .about2{
+        margin-top: 500px;
+        height: 2700px;
+    }
+    .about2-heading{
+        font-size: 25px;
+        margin-left: 40px;
+    }
+    .containerabout2{
+        flex-wrap: wrap;
+    }
+    .containerabout3{
+        flex-wrap: wrap;
+    }
+    .about2-link{
+        margin-top: 1500px;
+        font-size: 16px;
+    }
+    .free-heading{
+        font-size: 25px;
+        margin-left: 40px;
+    }
+    .freep{
+        margin-left: -75px;
+        width: 480px;
+        font-size: 15px;
+    }
+    .freesp{
+        margin-left: -18px;
+    }
+    .freebtn{
+        margin-left: 150px;
+        font-size: 15px;
+        padding: 13px 20px;
+    }
+    .contact{
+        height: 800px;
+    }
+    .contact-h1{
+        font-size: 30px;
+    }
+    .contactp{
+        font-size: 14px;
+        width: 300px;
+    }
+    .phone{
+        font-size: 18px;
+    }
+    .sech4{
+        font-size: 18px;
+        width: 300px;
+    }
+    .lastcont{
+        font-size: 16px;
+    }
+    .contact-pic{
+        margin-left: 550px;
+        margin-top: 100px;
+        width: 150px;
+    }
+    .footerp1{
+        font-size: 14px;
+        margin-left: -330px;
+    }
+    .footerp2{
+        font-size: 12px;
+        margin-left: -330px;
+    }
+}
