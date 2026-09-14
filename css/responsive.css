@@ -1,165 +1,186 @@
-@media (width = 425px){
-    ul{
-        width: 60%;
-        margin-top: 425px;
+/* Fine-tuning on top of the fluid (clamp/flex/grid) system in style.css.
+   The base styles already scale smoothly across sizes; these rules handle
+   layout-order / spacing tweaks at specific breakpoints so everything
+   stays perfectly centered and readable on every device. */
+
+/* ---------- Tablets & small laptops ---------- */
+@media (max-width: 992px){
+    .main-container{
+        justify-content: center;
+        text-align: center;
     }
-    .ri-close-large-line{
-        margin-left: 100px;
+    .main-text{
+        text-align: left;
+        flex: 1 1 100%;
+        max-width: 600px;
+        margin-inline: auto;
     }
-    li{
-        font-size: 20px;
-        margin-left: 10px;
+    .main-visual{
+        flex: 1 1 100%;
+        justify-content: center;
     }
-    .main-heading{
-        font-size: 30px;
+    .about-container{
+        justify-content: center;
     }
-    .main-p1{
-        font-size: 18px;
-        width: 450px;
+    .about-info{
+        text-align: left;
+        flex: 1 1 100%;
+        max-width: 650px;
     }
-    .main-p2{
-        font-size: 15px;
-        width: 380px;
-    }
-    .mainfree{
-        font-size: 15px;
-    }
-    .contactbtn{
-        padding: 15px 20px;
-        font-size: 15px;
-        margin-top: 20px;
-    }
-    .maincontainer{
-        flex-wrap: wrap;
-        margin-top: 100px;
-    }
-    .maincp1{
-        width: 80px;
-    }
-    .main-pic{
-        width: 200px;
-        height: 200px;
-        margin-left: -80px;
-        margin-top: 100px;
-    }
-    .gol1{
-        margin-left: 100px;
-        margin-top: 280px;
-    }
-    .gol2{
-        margin-left: 100px;
-    }
-    .gol3{
-        margin-left: 100px;
-    }
-    .gol4{
-        margin-left: 100px;
-    }
-    .gol5{
-        margin-left: 100px;
-    }
-    .gol1-h4{
-        margin-left: 200px;
-        font-size: 18px;
-    }
-    .gol2-h4{
-        margin-left: 200px;
-        font-size: 18px;
-    }
-    .gol3-h4{
-        margin-left: 200px;
-        font-size: 18px;
-    }
-    .gol4-h4{
-        margin-left: 200px;
-        font-size: 18px;
-    }
-    .gol5-h4{
-        margin-left: 200px;
-        font-size: 18px;
-    }
-    .about-heading{
-        margin-left: 750px;
-        font-size: 30px;
-        width: 330px;
-        margin-top: 400px;
-    }
-    .about-p{
-        margin-left: 750px;
-        font-size: 15px;
-        width: 300px;
-    }
-    .aboutbtn{
-        margin-left: 750px;
-        font-size: 15px;
-        padding: 15px 20px;
-    }
-    .about2{
-        margin-top: 500px;
-        height: 2700px;
+    .about-boxes{
+        flex: 1 1 100%;
+        max-width: 500px;
+        margin-inline: auto;
     }
     .about2-heading{
-        font-size: 25px;
-        margin-left: 40px;
+        text-align: center;
     }
-    .containerabout2{
+}
+
+/* ---------- Tablets (portrait) ---------- */
+@media (max-width: 768px){
+    ul{
+        width: min(85vw, 300px);
+    }
+    .main-visual{
+        gap: 1.5rem;
+    }
+    .main-features{
+        align-items: flex-start;
+    }
+    .contact-container{
+        text-align: left;
+    }
+    .contact-visual{
+        order: -1;
+        max-width: 260px;
+        margin-inline: auto;
+    }
+    .contact-info{
+        flex: 1 1 100%;
+        margin-inline: auto;
+    }
+    .footer{
+        text-align: center;
+    }
+}
+
+/* ---------- Mobile phones ---------- */
+@media (max-width: 560px){
+    header{
+        justify-content: flex-end;
+    }
+    ul{
+        width: 82vw;
+        padding-top: 5.5rem;
+    }
+    .main{
+        padding-top: 2rem;
+    }
+    .main-visual{
+        flex-direction: column;
+    }
+    .main-features{
+        width: 100%;
+    }
+    .gol-item{
+        justify-content: flex-start;
+    }
+    .about-boxes{
+        max-width: 100%;
+    }
+    .box1,.box2,.box3,.box4,.box5,.box6,.box7{
         flex-wrap: wrap;
     }
-    .containerabout3{
-        flex-wrap: wrap;
+    .maincontainer{
+        gap: 1.4rem;
     }
-    .about2-link{
-        margin-top: 1500px;
-        font-size: 16px;
+    .about2-heading{
+        text-align: center;
+        font-size: clamp(1.6rem, 6vw, 2rem);
     }
-    .free-heading{
-        font-size: 25px;
-        margin-left: 40px;
+    .containerabout2,.containerabout3{
+        grid-template-columns: repeat(2, 1fr);
     }
-    .freep{
-        margin-left: -75px;
-        width: 480px;
-        font-size: 15px;
+    .free-container{
+        text-align: left;
     }
-    .freesp{
-        margin-left: -18px;
+    .footerp1,.footerp2{
+        line-height: 1.6;
     }
-    .freebtn{
-        margin-left: 150px;
-        font-size: 15px;
-        padding: 13px 20px;
+}
+
+/* ---------- Very small phones ---------- */
+@media (max-width: 380px){
+    ul{
+        width: 90vw;
+        padding-left: 1.2rem;
+        padding-right: 1.2rem;
     }
-    .contact{
-        height: 800px;
+    .containerabout2,.containerabout3{
+        grid-template-columns: 1fr 1fr;
+        gap: 1.2rem;
     }
-    .contact-h1{
-        font-size: 30px;
+    .about2b1pic1,.about2b1pic2,.about2b1pic3,.about2b1pic4,
+    .about2b1pic5,.about2b1pic6,.about2b1pic7,.about2b1pic8{
+        width: 120px;
+        height: 120px;
     }
-    .contactp{
-        font-size: 14px;
-        width: 300px;
-    }
-    .phone{
-        font-size: 18px;
-    }
-    .sech4{
-        font-size: 18px;
-        width: 300px;
-    }
-    .lastcont{
-        font-size: 16px;
-    }
-    .contact-pic{
-        margin-left: 550px;
-        margin-top: 100px;
+    .main-pic{
         width: 150px;
+        height: 150px;
     }
-    .footerp1{
-        font-size: 14px;
-        margin-left: -330px;
+}
+
+/* ---------- NEW sections: tablets ---------- */
+@media (max-width: 992px){
+    .contact-container{
+        justify-content: center;
     }
-    .footerp2{
-        font-size: 12px;
-        margin-left: -330px;
+    .contact-form-wrap{
+        flex: 1 1 100%;
+        max-width: 600px;
+        margin-inline: auto;
+    }
+}
+
+/* ---------- NEW sections: tablets (portrait) ---------- */
+@media (max-width: 768px){
+    .portfolio-grid{
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    .testi-person{
+        flex-direction: column;
+        text-align: center;
+    }
+    .testi-name,.testi-role{
+        text-align: center;
+    }
+    .stats-container{
+        justify-content: center;
+        gap: 2.5rem;
+    }
+}
+
+/* ---------- NEW sections: mobile phones ---------- */
+@media (max-width: 560px){
+    .stats-container{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .portfolio-grid{
+        grid-template-columns: 1fr;
+    }
+    .testi-controls{
+        gap: 1rem;
+    }
+    .newsletter-form{
+        flex-direction: column;
+    }
+    .newsletter-input,.newsletter-btn{
+        width: 100%;
+    }
+    .faq-question{
+        font-size: 0.95rem;
     }
 }
