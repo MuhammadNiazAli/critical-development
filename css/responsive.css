@@ -131,3 +131,56 @@
         height: 150px;
     }
 }
+
+/* ---------- NEW sections: tablets ---------- */
+@media (max-width: 992px){
+    .contact-container{
+        justify-content: center;
+    }
+    .contact-form-wrap{
+        flex: 1 1 100%;
+        max-width: 600px;
+        margin-inline: auto;
+    }
+}
+
+/* ---------- NEW sections: tablets (portrait) ---------- */
+@media (max-width: 768px){
+    .portfolio-grid{
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    .testi-person{
+        flex-direction: column;
+        text-align: center;
+    }
+    .testi-name,.testi-role{
+        text-align: center;
+    }
+    .stats-container{
+        justify-content: center;
+        gap: 2.5rem;
+    }
+}
+
+/* ---------- NEW sections: mobile phones ---------- */
+@media (max-width: 560px){
+    .stats-container{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .portfolio-grid{
+        grid-template-columns: 1fr;
+    }
+    .testi-controls{
+        gap: 1rem;
+    }
+    .newsletter-form{
+        flex-direction: column;
+    }
+    .newsletter-input,.newsletter-btn{
+        width: 100%;
+    }
+    .faq-question{
+        font-size: 0.95rem;
+    }
+}
